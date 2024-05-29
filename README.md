@@ -9,8 +9,8 @@
 
 ```
   ├── src: Build U-Net model code（搭建U-Net模型代码）
-  ├── train_utils: Training, validation and multi-GPU training related modules (训练、验证以及多GPU训练相关模块)
-  ├── my_dataset.py: Custom dataset for reading DRIVE dataset (自定义dataset用于读取DRIVE数据集)
+  ├── train_utils: Training, validation modules (训练、验证相关模块)
+  ├── my_dataset.py: Custom dataset for reading DRIVE dataset (自定义dataset数据集)
   ├── train.py: Training start-up scripts (训练启动脚本)
   ├── predict.py: Predicting start-up script (预测脚本)
   └── compute_mean_std.py: Mean and standard deviation of each channel (统计数据集各通道的均值和标准差)
