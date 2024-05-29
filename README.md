@@ -1,37 +1,24 @@
 
-## 环境配置：
+## Environment Configuration
 * Python 3.8.19
 * Pytorch 1.13.1
 * CUDA 11.7
-* GPU 3050Ti 4GB显存
+* GPU 3050Ti 4GB
 
-## 文件结构：
+## File Structure
 ```
-  ├── src: 搭建U-Net模型代码
-  ├── train_utils: 训练、验证以及多GPU训练相关模块
-  ├── my_dataset.py: 自定义dataset用于读取DRIVE数据集(视网膜血管分割)
-  ├── train.py: 训练脚本
-  ├── predict.py: 预测脚本(需要先进行训练获得权重)
-  └── compute_mean_std.py: 统计数据集各通道的均值和标准差
+  ├── src: Build U-Net model code（搭建U-Net模型代码）
+  ├── train_utils: Training, validation and multi-GPU training related modules (训练、验证以及多GPU训练相关模块)
+  ├── my_dataset.py: Custom dataset for reading DRIVE dataset (自定义dataset用于读取DRIVE数据集)
+  ├── train.py: Training start-up scripts (训练启动脚本)
+  ├── predict.py: Predicting start-up script (预测脚本)
+  └── compute_mean_std.py: Mean and standard deviation of each channel of the statistical data set (统计数据集各通道的均值和标准差)
 ```
-
-## DRIVE数据集下载地址：
-* 官网地址： [https://drive.grand-challenge.org/](https://drive.grand-challenge.org/)
-
-
-## 训练方法
-* 运行train.py
-
-## 预测方法
-* 运行predict.py
-
-## 本项目U-Net使用双线性插值做为上采样
-
 ## Image Comparison
 <table>
     <tr>
-    <td>label - 测试集（1st_manual）</td>
-    <td>result - 训练后预测图片</td>
+    <td>label (test set: 1st_manual) </td>
+    <td>result</td>
 
   </tr>
   <tr>
@@ -39,4 +26,17 @@
     <td><img src="./DRIVE/test/1st_manual/01_manual1.gif"></td>
   </tr>
 </table>
+
+## DRIVED dataset download address：
+* [https://drive.grand-challenge.org/](https://drive.grand-challenge.org/)
+
+
+## Training Methods
+* run train.py
+
+## Predicting Methods
+* run predict.py
+
+## Additional information
+* 本项目U-Net使用双线性插值做为上采样 (This project U-Net uses bilinear interpolation for up-sampling)
 
