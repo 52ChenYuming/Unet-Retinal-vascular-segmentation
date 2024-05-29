@@ -13,7 +13,7 @@
   ├── my_dataset.py: Custom dataset for reading DRIVE dataset (自定义dataset数据集)
   ├── train.py: Training start-up scripts (训练启动脚本)
   ├── predict.py: Predicting start-up script (预测脚本)
-  └── compute_mean_std.py: Mean and standard deviation of each channel (统计数据集各通道的均值和标准差)
+  └── compute_mean_std.py: Mean and standard deviation of each channel (统计各通道的均值和标准差)
 ```
 
 ## Image Comparison （图片对比）
