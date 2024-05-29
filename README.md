@@ -26,3 +26,17 @@
 * 运行predict.py
 
 ## 本项目U-Net使用双线性插值做为上采样
+
+## Image Comparison
+<table>
+    <tr>
+    <td>label - 测试集（1st_manual）</td>
+    <td>result - 训练后预测图片</td>
+
+  </tr>
+  <tr>
+    <td><img src="./test_result_1.png"></td>
+    <td><img src="./DRIVE/test/1st_manual/01_manual1.gif"></td>
+  </tr>
+</table>
+
